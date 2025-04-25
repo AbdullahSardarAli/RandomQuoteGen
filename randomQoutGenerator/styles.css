@@ -1,0 +1,97 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+    background: linear-gradient(135deg, #051a94, #e7f712, #f82904);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .quote-card {
+    background: rgba(2, 131, 35, 0.25);
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(139, 7, 172, 0.4);
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(22, 6, 170, 0.08);
+    padding: 40px;
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+    animation: floatUp 0.7s ease-out;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1409ac;
+    margin-bottom: 20px;
+  }
+  
+  .quote {
+    font-size: 1.5rem;
+    color: #1b1b1b;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+  .btn {
+    background-color: #0422ca;
+    color: #eecb02;
+    border: none;
+    padding: 14px 32px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .btn:hover {
+    background-color: #8804d4;
+  }
+  
+  .author {
+    font-size: 1.1rem;
+    color: #4f4f4f;
+    font-style: italic;
+    margin-bottom: 30px;
+  }
+  
+  .btn-glow {
+    background: #65db04;
+    color: #28b904e3;
+    border: 2px solid rebeccapurple;
+    padding: 14px 28px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 transparent;
+  }
+  
+  .btn-glow:hover {
+    background: #4121b3;
+    box-shadow: 0 0 15px rgba(100, 223, 223, 0.7);
+    transform: scale(1.05);
+  }
+  
+  @keyframes floatUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
